@@ -26,7 +26,11 @@ const SkillModal: React.FC<SkillModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4 transition-all ease-in-out duration-300"
+      className="fixed inset-0 flex items-center justify-center z-50 p-4 transition-all ease-in-out duration-300"
+      style={{
+        backgroundColor: "rgba(0, 0, 0, 0.9)",
+        backdropFilter: "blur(5px)",
+      }}
       onClick={onClose}
     >
       <div

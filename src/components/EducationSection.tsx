@@ -1,5 +1,7 @@
 import React from "react";
 import type { Education } from "../types";
+import { SectionTitle, EducationCard } from "../ui";
+import { SectionContainer } from "../ui/SectionContainer";
 
 interface EducationSectionProps {
   isVisible: boolean;
@@ -18,37 +20,20 @@ const EducationSection = React.forwardRef<HTMLElement, EducationSectionProps>(({
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
       }`}
     >
-      <div className="max-w-6xl mx-auto">
-        <h2
-          className="text-2xl md:text-6xl font-black font-mono text-purple-300 text-center mb-12"
-          style={{ textShadow: "0 0 10px #BA68C8" }}
-        >
+      <SectionContainer>
+        <SectionTitle color="purple">
           &gt; EDUCATION.DB
-        </h2>
+        </SectionTitle>
 
         <div className="space-y-8">
           {education.map((edu, index) => (
-            <div
+            <EducationCard
               key={index}
-              className="bg-gray-900 border border-purple-400 rounded-lg p-6 transition-all duration-300"
-              style={{ boxShadow: "0 0 20px rgba(186,104,200,0.2)" }}
-            >
-              <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-                <h3 className="text-xl font-bold text-cyan-300 font-mono wrap-break-word">
-                  {edu.title}
-                </h3>
-                <span className="text-green-400 font-mono text-sm">
-                  [{edu.period}]
-                </span>
-              </div>
-              <h4 className="text-yellow-400 font-mono mb-3">
-                {edu.institution}
-              </h4>
-              <p className="text-gray-300">{edu.description}</p>
-            </div>
+              education={edu}
+            />
           ))}
         </div>
-      </div>
+      </SectionContainer>
     </section>
   );
 });

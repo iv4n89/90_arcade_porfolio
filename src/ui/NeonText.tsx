@@ -2,7 +2,7 @@ import React from "react";
 
 interface NeonTextProps {
   children: React.ReactNode;
-  color?: "cyan" | "white" | "green" | "yellow" | "red" | "purple";
+  color?: "cyan" | "white" | "green" | "yellow" | "red" | "purple" | "gray" | "darkGray";
   isOn?: boolean;
   powerOutage?: boolean;
   className?: string;
@@ -17,22 +17,26 @@ const NeonText: React.FC<NeonTextProps> = ({
   className = "",
   style = {},
 }) => {
-  const colorClasses = {
+  const colorClasses: Record<string, string> = {
     cyan: "text-cyan-300",
     white: "text-white",
     green: "text-green-300",
     yellow: "text-yellow-300",
     red: "text-red-300",
     purple: "text-purple-300",
+    gray: "text-gray-300",
+    darkGray: "text-gray-500",
   };
 
-  const neonShadows = {
+  const neonShadows: Record<string, string> = {
     cyan: "0 0 2px #4DD0E1, 0 0 4px #4DD0E1, 0 0 6px #4DD0E1",
     white: "0 0 1px #FFFFFF, 0 0 3px #FFFFFF, 0 0 5px #FFFFFF",
     green: "0 0 1px #81C784, 0 0 3px #81C784, 0 0 5px #81C784",
     yellow: "0 0 2px #FFC107, 0 0 4px #FFC107, 0 0 6px #FFC107",
     red: "0 0 2px #F44336, 0 0 4px #F44336, 0 0 6px #F44336",
     purple: "0 0 2px #9C27B0, 0 0 4px #9C27B0, 0 0 6px #9C27B0",
+    gray: "0 0 1px #B0BEC5, 0 0 3px #B0BEC5, 0 0 5px #B0BEC5",
+    darkGray: "0 0 1px #78909C, 0 0 3px #78909C, 0 0 5px #78909C",
   };
 
   const neonStyle = {

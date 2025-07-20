@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-mono tracking-wider leading-none text-left flex flex-col">
             <NeonText
-              color="cyan"
+              color="white"
               isOn={isOn}
               powerOutage={powerOutage}
               className="mb-1"
@@ -37,7 +37,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               IVÁN
             </NeonText>
             <NeonText
-              color="white"
+              color="cyan"
               isOn={isOn}
               powerOutage={powerOutage}
               className="mb-1"

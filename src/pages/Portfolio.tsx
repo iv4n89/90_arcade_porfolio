@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
+import { ContactModal } from "../components/ContactModal";
 import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
+import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
 import ProjectsSection from "../components/ProjectsSection";
 import SkillModal from "../components/SkillModal";
@@ -15,6 +17,7 @@ const Portfolio: React.FC = () => {
   const [visibleSections, setVisibleSections] = useState<VisibleSections>({});
   const [projectFilter, setProjectFilter] = useState<string | null>(null);
   const [selectedSkill, setSelectedSkill] = useState<string | null>(null);
+  const [contactModalOpen, setContactModalOpen] = useState<boolean>(false);
   const {
     educationData,
     experienceData,
@@ -48,6 +51,14 @@ const Portfolio: React.FC = () => {
 
   const closeSkillModal = (): void => {
     setSelectedSkill(null);
+  };
+
+  const openContactModal = (): void => {
+    setContactModalOpen(true);
+  };
+
+  const closeContactModal = (): void => {
+    setContactModalOpen(false);
   };
 
   const handleViewProjects = (skill: string): void => {
@@ -130,6 +141,7 @@ const Portfolio: React.FC = () => {
         isVisible={isVisible}
         flickering={flickering}
         onTagClick={scrollToSection}
+        onContactClick={openContactModal}
       />
 
       <ExperienceSection
@@ -169,14 +181,9 @@ const Portfolio: React.FC = () => {
         onViewProjects={handleViewProjects}
       />
 
-      <div className="text-center p-8 bg-black border-t border-gray-800 relative z-10">
-        <div className="text-green-400 font-mono text-sm mb-2">
-          &gt; END_OF_PORTFOLIO.LOG
-        </div>
-        <div className="text-gray-500 font-mono text-xs">
-          SYSTEM READY FOR NEW CHALLENGES | CONTACT.PROTOCOL_ACTIVE
-        </div>
-      </div>
+      <ContactModal open={contactModalOpen} onClose={closeContactModal} />
+
+      <Footer onContactClick={openContactModal} />
     </div>
   );
 };

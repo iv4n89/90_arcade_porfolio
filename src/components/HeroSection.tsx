@@ -13,6 +13,7 @@ interface HeroSectionProps {
   flickering: boolean;
   powerOutage: boolean;
   onTagClick: (section: string, filter?: string) => void;
+  onContactClick: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -20,6 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   flickering,
   powerOutage,
   onTagClick,
+  onContactClick,
 }) => {
   const isOn = isVisible && !flickering && !powerOutage;
 
@@ -97,7 +99,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </SkillTag>
         </div>
 
-        <StatusPanel />
+        <StatusPanel onContactClick={onContactClick} />
       </SectionContainer>
       <ParticleSystem />
     </div>

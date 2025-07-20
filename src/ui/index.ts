@@ -25,3 +25,8 @@ export { default as ExperienceCard } from './ExperienceCard';
 export { default as EducationCard } from './EducationCard';
 export { default as ProjectCard } from './ProjectCard';
 export { default as SkillCategory } from './SkillCategory';
+
+// Contact Components
+export { ActionButton } from './ActionButton';
+export { ContactField } from './ContactField';
+export { StatusMessage } from './StatusMessage';

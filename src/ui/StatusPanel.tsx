@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
 interface StatusPanelProps {
   status?: string;
   location?: string;
-  lastUpdate?: string;
   className?: string;
+  onContactClick?: () => void;
 }
 
 const StatusPanel: React.FC<StatusPanelProps> = ({
-  status = '[ONLINE]',
-  location = 'HUELVA, ES',
-  lastUpdate = '2025.07.20',
-  className = ''
+  status = "[ONLINE]",
+  location = "HUELVA, ES",
+  className = "",
+  onContactClick,
 }) => {
   return (
     <div className={`mt-12 pt-6 border-t border-gray-700 ${className}`}>
@@ -25,8 +25,13 @@ const StatusPanel: React.FC<StatusPanelProps> = ({
           <div className="text-gray-300">{location}</div>
         </div>
         <div>
-          <div className="text-cyan-400 mb-1">LAST UPDATE</div>
-          <div className="text-gray-300">{lastUpdate}</div>
+          <div className="text-cyan-400 mb-1">CONTACT</div>
+          <a
+            className="text-green-400 cursor-pointer underline underline-offset-8 hover:text-green-300 transition-colors"
+            onClick={onContactClick}
+          >
+            {"[ AVAILABLE ]"}
+          </a>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ export const usePortfolioData = () => {
       company: "BCNC - TELEFONICA",
       period: "2024 - PRESENT",
       description:
-        "Desarrollo de aplicaciones web con Next.js, con blog y page builder sobre WordPress",
+        "Web application development with Next.js, blog and page builder on WordPress",
       technologies: [
         "React",
         "TypeScript",
@@ -36,7 +36,7 @@ export const usePortfolioData = () => {
       company: "BCNC - TELEFONICA",
       period: "2022 - 2024",
       description:
-        "Apoyo a partners en integración de chatbot Aura (MS Bot Framework), documentación y soporte técnico. Automatizaciones de procesos con Docker y Jenkins.",
+        "Partner support in Aura chatbot integration (MS Bot Framework), documentation and technical support. Process automation with Docker and Jenkins.",
       technologies: [
         "Node.js",
         "MS Bot Framework",
@@ -56,7 +56,7 @@ export const usePortfolioData = () => {
       company: "AIUDO",
       period: "2021 - 2022",
       description:
-        "Desarrollo de herramienta interna de gestión con Laravel, Node.js y Next.js. Integración de APIs y optimización de rendimiento.",
+        "Development of internal management tool with Laravel, Node.js and Next.js. API integration and performance optimization.",
       technologies: [
         "TypeScript",
         "React",
@@ -80,7 +80,7 @@ export const usePortfolioData = () => {
     {
       title: "E-COMMERCE_FRONTEND",
       description:
-        "Proyecto base de e-commerce para diferentes brands de Telefónica. Next.js con integración SAP y page builder.",
+        "E-commerce base project for different Telefónica brands. Next.js with SAP integration and page builder.",
       url: "https://www.esimflag.com",
       technologies: [
         "React",
@@ -106,7 +106,7 @@ export const usePortfolioData = () => {
     {
       title: "AI_VERIFY_ECOMMERCE_FRONTEND",
       description:
-        "Frontend para proyecto de verificación de imágenes, vídeos y audio generados por IA. Integración con API de verificación y gestión de usuarios.",
+        "Frontend for AI-generated image, video and audio verification project. Integration with verification API and user management.",
       url: "https://www.tu.com/verifai",
       technologies: [
         "React",
@@ -136,7 +136,7 @@ export const usePortfolioData = () => {
     {
       title: "TU_COM_DIGITAL_PRODUCTS_PLATFORM",
       description:
-        "Rediseño completo de la plataforma tu.com para mostrar productos digitales de Telefónica. Migración a Next.js con integración WordPress y desarrollo de page builder personalizado.",
+        "Complete redesign of tu.com platform to showcase Telefónica's digital products. Migration to Next.js with WordPress integration and custom page builder development.",
       url: "https://www.tu.com",
       technologies: [
         "React",
@@ -161,7 +161,7 @@ export const usePortfolioData = () => {
     },
     {
       title: "SIGNER_APP",
-      description: "Aplicación de generación de firmas para emails.",
+      description: "Email signature generation application.",
       technologies: [
         "React",
         "TypeScript",
@@ -180,7 +180,7 @@ export const usePortfolioData = () => {
     {
       title: "AURA_CHATBOT",
       description:
-        "Desarrollo de chatbot para atención al cliente de Telefónica. Integración con MS Bot Framework y APIs de servicios.",
+        "Chatbot development for Telefónica customer service. Integration with MS Bot Framework and service APIs.",
       url: "https://aura.telefonica.com/",
       technologies: [
         "Node.js",
@@ -204,7 +204,7 @@ export const usePortfolioData = () => {
     {
       title: "AIMTROPOLIS_GAME_BACKEND",
       description:
-        "Backend para juego de Realidad Virtual Aimtropolis. AWS Lambda, DynamoDB y API Gateway.",
+        "Backend for Virtual Reality game Aimtropolis. AWS Lambda, DynamoDB and API Gateway.",
       url: "https://www.aimtropolis.com",
       technologies: [
         "Node.js",
@@ -220,7 +220,7 @@ export const usePortfolioData = () => {
     {
       title: "BACKEND_MICROSERVICES_SPRINGBOOT",
       description:
-        "Proyecto personal de microservicios con Spring Boot. Kafka para mensajería y arquitectura DDD.",
+        "Personal microservices project with Spring Boot. Kafka for messaging and DDD architecture.",
       url: "https://github.com/iv4n89?tab=repositories&q=java-ddd-films&type=&language=&sort=",
       technologies: [
         "Java",
@@ -240,7 +240,7 @@ export const usePortfolioData = () => {
     {
       title: "DOCKER_TEMPLATES",
       description:
-        "Plantillas de Docker para proyectos web. Incluye configuraciones para Node.js, Nest.js, React, bases de datos y más.",
+        "Docker templates for web projects. Includes configurations for Node.js, Nest.js, React, databases and more.",
       url: "https://github.com/iv4n89/docker-templates",
       technologies: ["Docker"],
       status: "PERSONAL_PROJECT",
@@ -249,7 +249,7 @@ export const usePortfolioData = () => {
     {
       title: "INTERNAL_MANAGEMENT_TOOL",
       description:
-        "Herramienta interna de gestión de trabajos y tareas, con concurrencia y optimización de rendimiento. Arquitectura limpia y modular, siguiendo departamentos y roles de la empresa.",
+        "Internal work and task management tool with concurrency and performance optimization. Clean and modular architecture, following company departments and roles.",
       technologies: [
         "Laravel",
         "PHP",
@@ -276,7 +276,7 @@ export const usePortfolioData = () => {
     {
       title: "INTERACTIVE_ACTIVITY_APP",
       description:
-        "Aplicación de creación de actividades interactivas para educación. Permite a los profesores crear y compartir actividades con sus alumnos.",
+        "Interactive activities creation app for education. Allows teachers to create and share activities with their students.",
       technologies: [
         "Node.js",
         "React",
@@ -299,7 +299,7 @@ export const usePortfolioData = () => {
     {
       title: "GAMES_LIBRARY",
       description:
-        "Proyecto personal de gestión de colección de videojuegos retro. Permite añadir juegos a colección, agregar imágenes o vídeos y seguir cambios de precio.",
+        "Personal retro videogames collection management project. Allows adding games to collection, adding images or videos and tracking price changes.",
       url: "https://github.com/iv4n89/GamesDB-NestJs",
       technologies: [
         "Node.js",
@@ -376,261 +376,261 @@ export const usePortfolioData = () => {
   const skillDetails: Record<string, SkillDetail> = {
     React: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Biblioteca favorita para interfaces modernas. Hooks, Context API, y optimización de performance.",
+        "Favorite library for modern interfaces. Hooks, Context API, and performance optimization.",
     },
     "Node.js": {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Runtime principal para backend. APIs escalables, microservicios y real-time applications.",
+        "Main runtime for backend. Scalable APIs, microservices and real-time applications.",
     },
     TypeScript: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Lenguaje preferido para proyectos grandes. Type safety y mejor developer experience.",
+        "Preferred language for large projects. Type safety and better developer experience.",
     },
     Angular: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework principal para desarrollo enterprise. Especializado en arquitecturas complejas y microfrontends.",
+        "Main framework for enterprise development. Specialized in complex architectures and microfrontends.",
     },
     Jest: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Framework de testing principal. Unit tests, integration tests y mocks.",
+        "Main testing framework. Unit tests, integration tests and mocks.",
     },
     Puppeteer: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Automatización de pruebas y scraping. Generación de screenshots.",
+        "Test automation and scraping. Screenshot generation.",
     },
     "Testing Library": {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Testing de componentes React. Enfoque en user interactions y accessibility.",
+        "React component testing. Focus on user interactions and accessibility.",
     },
     Docker: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Containerización para desarrollo y producción. Docker Compose y orquestación básica.",
+        "Containerization for development and production. Docker Compose and basic orchestration.",
     },
     AWS: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Servicios cloud para deployment y escalabilidad. EC2, S3, Lambda y RDS.",
+        "Cloud services for deployment and scalability. EC2, S3, Lambda and RDS.",
     },
     MongoDB: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Base de datos NoSQL para aplicaciones modernas. Aggregation pipelines y optimización.",
+        "NoSQL database for modern applications. Aggregation pipelines and optimization.",
     },
     "Next.js": {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Framework de React para aplicaciones universales. SSR, SSG y optimización de rendimiento.",
+        "React framework for universal applications. SSR, SSG and performance optimization.",
     },
     JavaScript: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Lenguaje base para desarrollo web. ES6+ features, async programming y optimización.",
+        "Base language for web development. ES6+ features, async programming and optimization.",
     },
     WordPress: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "CMS principal para proyectos web. Desarrollo de themes y plugins personalizados. Page builder con Gutenberg.",
+        "Main CMS for web projects. Custom themes and plugins development. Page builder with Gutenberg.",
     },
     HTML5: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Estructura base de la web. Semántica, accesibilidad y mejores prácticas.",
+        "Web structure foundation. Semantics, accessibility and best practices.",
     },
     CSS3: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Estilos modernos con Flexbox y Grid. Preprocesadores como SASS y Tailwind CSS.",
+        "Modern styling with Flexbox and Grid. Preprocessors like SASS and Tailwind CSS.",
     },
     "Nest.js": {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Framework de Node.js para aplicaciones escalables. Arquitectura modular y microservicios.",
+        "Node.js framework for scalable applications. Modular architecture and microservices.",
     },
     Java: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Lenguaje de programación para aplicaciones enterprise. Spring Boot y microservicios.",
+        "Programming language for enterprise applications. Spring Boot and microservices.",
     },
     "Spring Boot": {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework de Java para desarrollo rápido de aplicaciones. Microservicios y REST APIs.",
+        "Java framework for rapid application development. Microservices and REST APIs.",
     },
     PHP: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Lenguaje de backend principal. Laravel para desarrollo web y APIs.",
+        "Main backend language. Laravel for web development and APIs.",
     },
     Laravel: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework de PHP para desarrollo web. MVC, Eloquent y APIs REST.",
+        "PHP framework for web development. MVC, Eloquent and REST APIs.",
     },
     Python: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Lenguaje versátil para backend y scripts. Django y Flask para desarrollo web.",
+        "Versatile language for backend and scripts. Django and Flask for web development.",
     },
     Django: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework de Python para desarrollo web. ORM, autenticación y APIs REST.",
+        "Python framework for web development. ORM, authentication and REST APIs.",
     },
     PostgreSQL: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Base de datos relacional avanzada. Optimización de consultas y administración de datos.",
+        "Advanced relational database. Query optimization and data management.",
     },
     Redis: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Base de datos en memoria para caching y pub/sub. Optimización de rendimiento y escalabilidad.",
+        "In-memory database for caching and pub/sub. Performance optimization and scalability.",
     },
     "MS Bot Framework": {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework de Microsoft para desarrollo de chatbots. Integración con servicios de Azure y APIs.",
+        "Microsoft framework for chatbot development. Integration with Azure services and APIs.",
     },
     MySQL: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Base de datos relacional popular. Optimización de consultas y administración de datos.",
+        "Popular relational database. Query optimization and data management.",
     },
     Mockito: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework de Java para creación de mocks en pruebas unitarias. Facilita el testing de componentes aislados.",
+        "Java framework for creating mocks in unit tests. Facilitates testing of isolated components.",
     },
     JUnit: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Framework de Java para pruebas unitarias. Estructuración de tests y aserciones.",
+        "Java framework for unit testing. Test structuring and assertions.",
     },
     Kafka: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Plataforma de mensajería distribuida. Ideal para aplicaciones en tiempo real y procesamiento de eventos o comunicaciones entre microservicios.",
+        "Distributed messaging platform. Ideal for real-time applications and event processing or microservices communication.",
     },
     Kubernetes: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Orquestación de contenedores para aplicaciones distribuidas. Gestión de clústers y despliegues.",
+        "Container orchestration for distributed applications. Cluster management and deployments.",
     },
     Jenkins: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Automatización de procesos de integración y entrega continua. Configuración de pipelines y gestión de versiones.",
+        "Process automation for continuous integration and delivery. Pipeline configuration and version management.",
     },
     GitHub: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Plataforma de control de versiones y colaboración. Pull requests, issues y gestión de proyectos.",
+        "Version control and collaboration platform. Pull requests, issues and project management.",
     },
     Git: {
       level: "EXPERT",
-      experience: "4 años",
+      experience: "4 years",
       description:
-        "Sistema de control de versiones distribuido. Branching, merging y resolución de conflictos.",
+        "Distributed version control system. Branching, merging and conflict resolution.",
     },
     Jira: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Herramienta de gestión de proyectos y seguimiento de tareas. Scrum, Kanban y reporting.",
+        "Project management and task tracking tool. Scrum, Kanban and reporting.",
     },
     Figma: {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Herramienta de diseño colaborativo. Prototipos, wireframes y diseño UI/UX.",
+        "Collaborative design tool. Prototypes, wireframes and UI/UX design.",
     },
     DDD: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Enfoque de diseño de software centrado en el dominio. Modelado de dominios complejos y separación de preocupaciones.",
+        "Domain-driven software design approach. Complex domain modeling and separation of concerns.",
     },
     "Hexagonal Architecture": {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Patrón de arquitectura que separa la lógica de negocio de las dependencias externas. Facilita el testing y la evolución del software.",
+        "Architecture pattern that separates business logic from external dependencies. Facilitates testing and software evolution.",
     },
     Microservices: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Arquitectura de software que divide aplicaciones en servicios pequeños e independientes. Escalabilidad y despliegue independiente.",
+        "Software architecture that divides applications into small, independent services. Scalability and independent deployment.",
     },
     "REST APIs": {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Diseño y desarrollo de APIs RESTful. Principios de diseño, autenticación y documentación.",
+        "RESTful API design and development. Design principles, authentication and documentation.",
     },
     GraphQL: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Lenguaje de consulta para APIs. Permite a los clientes solicitar solo los datos necesarios. Optimización de consultas y gestión de datos.",
+        "Query language for APIs. Allows clients to request only necessary data. Query optimization and data management.",
     },
     "CI/CD": {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Integración y entrega continua. Automatización de pruebas y despliegues. Mejora de la calidad del software y reducción de tiempos de entrega.",
+        "Continuous integration and delivery. Test and deployment automation. Software quality improvement and delivery time reduction.",
     },
     CQRS: {
       level: "INTERMEDIATE",
-      experience: "2 años",
+      experience: "2 years",
       description:
-        "Command Query Responsibility Segregation. Separación de comandos y consultas para mejorar la escalabilidad y el rendimiento.",
+        "Command Query Responsibility Segregation. Separation of commands and queries to improve scalability and performance.",
     },
     "Agile Methodologies": {
       level: "ADVANCED",
-      experience: "3 años",
+      experience: "3 years",
       description:
-        "Metodologías ágiles para desarrollo de software. Scrum y Kanban. Mejora de la colaboración y adaptación al cambio.",
+        "Agile methodologies for software development. Scrum and Kanban. Improving collaboration and adaptation to change.",
     },
   };
 
@@ -640,15 +640,15 @@ export const usePortfolioData = () => {
       institution: "The Linux Foundation",
       period: "2023",
       description:
-        "Certificación oficial de The Linux Foundation en desarrollo de aplicaciones con Node.js. Enfoque en buenas prácticas, testing y optimización.",
+        "Official certification from The Linux Foundation in Node.js application development. Focus on best practices, testing and optimization.",
       skills: ["Node.js", "JavaScript", "Testing", "Performance"],
     },
     {
-      title: "ESPECIALISTA_PYTHON",
+      title: "PYTHON_SPECIALIST",
       institution: "CloudFTic Formación",
       period: "2022 - 2023",
       description:
-        "Curso especializado en Python para desarrollo web, automatización de tareas, análisis de datos y web scraping.",
+        "Specialized course in Python for web development, task automation, data analysis and web scraping.",
       skills: [
         "Python",
         "Django",
@@ -665,7 +665,7 @@ export const usePortfolioData = () => {
       institution: "CloudFTic Formación",
       period: "2021",
       description:
-        "Máster en desarrollo Full Stack con Spring Boot (Java) y Angular. Enfoque en arquitecturas modernas, microservicios y desarrollo de aplicaciones web escalables.",
+        "Master's degree in Full Stack development with Spring Boot (Java) and Angular. Focus on modern architectures, microservices and scalable web application development.",
       skills: [
         "Java",
         "Spring Boot",

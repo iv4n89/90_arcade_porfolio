@@ -323,6 +323,7 @@ export const usePortfolioData = () => {
     frontend: [
       "React",
       "Next.js",
+      "Redux",
       "Angular",
       "TypeScript",
       "JavaScript",
@@ -463,6 +464,12 @@ export const usePortfolioData = () => {
       experience: "4 years",
       description:
         "Modern styling with Flexbox and Grid. Preprocessors like SASS and Tailwind CSS.",
+    },
+    Redux: {
+        level: "INTERMEDIATE",
+        experience: "2 years",
+        description:
+            "State management for React applications. Middleware, selectors and performance optimization.",
     },
     "Nest.js": {
       level: "ADVANCED",

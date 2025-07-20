@@ -493,7 +493,7 @@ export const usePortfolioData = () => {
       level: "INTERMEDIATE",
       experience: "2 years",
       description:
-        "Main backend language. Laravel for web development and APIs.",
+        "Backend language for web development. Laravel for APIs and web applications.",
     },
     Laravel: {
       level: "INTERMEDIATE",

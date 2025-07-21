@@ -16,14 +16,14 @@ const EducationCard: React.FC<EducationCardProps> = ({
       style={{ boxShadow: "0 0 20px rgba(186,104,200,0.2)" }}
     >
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-        <h3 className="text-xl font-bold text-cyan-300 font-mono wrap-break-word">
+        <h3 className="text-sm font-bold text-cyan-300 wrap-break-word">
           {education.title}
         </h3>
-        <span className="text-green-400 font-mono text-sm">
+        <span className="text-green-400 text-xs">
           [{education.period}]
         </span>
       </div>
-      <h4 className="text-yellow-400 font-mono mb-3">
+      <h4 className="text-yellow-400 text-xs mb-3">
         {education.institution}
       </h4>
       <p className="text-gray-300">{education.description}</p>

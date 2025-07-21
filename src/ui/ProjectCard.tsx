@@ -20,14 +20,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       style={{ boxShadow: "0 0 20px rgba(255,255,0,0.2)" }}
     >
       <div className="flex md:flex-row flex-col justify-between items-start mb-4 wrap-anywhere">
-        <h3 className="text-lg font-bold text-cyan-300 font-mono">
+        <h3 className="text-sm font-bold text-cyan-300">
           {project.title}
         </h3>
         <div className="flex flex-col items-end gap-1">
-          <span className="text-green-400 font-mono text-xs">
+          <span className="text-green-400 text-3xs">
             [{project.status}]
           </span>
-          <span className="text-gray-400 font-mono text-xs">
+          <span className="text-gray-400 text-2xs">
             {project.year}
           </span>
         </div>
@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           href={project.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-400 hover:text-blue-300 font-mono text-xs mb-4 block"
+          className="text-blue-400 hover:text-blue-300 text-2xs mb-4 block wrap-anywhere"
         >
           {project.url}
         </a>
@@ -49,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {project.technologies.map((tech, techIndex) => (
           <span
             key={techIndex}
-            className={`px-2 py-1 bg-black border text-xs font-mono rounded cursor-pointer transition-all hover:scale-105 ${
+            className={`px-2 py-1 bg-black border text-3xs rounded cursor-pointer transition-all hover:scale-105 ${
               projectFilter &&
               tech.toLowerCase().includes(projectFilter.toLowerCase())
                 ? "border-yellow-400 text-black bg-yellow-400 bg-opacity-20"

@@ -85,7 +85,7 @@ const SkillModal: React.FC<SkillModalProps> = ({
                   .map((cert, index) => (
                     <div
                       key={index}
-                      className="text-yellow-400 font-mono text-xs"
+                      className="text-yellow-400 text-3xs"
                     >
                       ✓ {cert.title}
                     </div>

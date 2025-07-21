@@ -15,8 +15,8 @@ const StatDisplay: React.FC<StatDisplayProps> = ({
 }) => {
   return (
     <div className={`text-center ${className}`}>
-      <div className="text-green-400 font-mono text-sm">{label}</div>
-      <div className={`font-mono font-bold ${valueColor}`}>
+      <div className="text-green-400 text-2xs">{label}</div>
+      <div className={`font-bold text-xs ${valueColor}`}>
         {value}
       </div>
     </div>

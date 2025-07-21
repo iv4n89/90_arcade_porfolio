@@ -12,7 +12,7 @@ const CloseButton: React.FC<CloseButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`absolute top-4 right-4 text-red-400 hover:text-red-300 font-mono text-xl font-bold cursor-pointer transition-all ease-in-out duration-300 ${className}`}
+      className={`absolute top-4 right-4 text-red-400 hover:text-red-300 text-md font-bold cursor-pointer transition-all ease-in-out duration-300 ${className}`}
     >
       [X]
     </button>

@@ -13,7 +13,7 @@ const ModalTitle: React.FC<ModalTitleProps> = ({
 }) => {
   return (
     <h3
-      className={`text-2xl font-black font-mono text-cyan-400 mb-4 text-center ${className}`}
+      className={`text-lg font-black text-cyan-400 mb-4 text-center ${className}`}
       style={{ 
         textShadow: "0 0 10px #00FFFF",
         ...style 

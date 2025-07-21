@@ -134,7 +134,7 @@ export const usePortfolioData = () => {
       year: "2025",
     },
     {
-      title: "TU_COM_DIGITAL_PRODUCTS_PLATFORM",
+      title: "TU_COM_DIGITAL_PRODUCTS",
       description:
         "Complete redesign of tu.com platform to showcase Telefónica's digital products. Migration to Next.js with WordPress integration and custom page builder development.",
       url: "https://www.tu.com",
@@ -218,7 +218,7 @@ export const usePortfolioData = () => {
       year: "2023",
     },
     {
-      title: "BACKEND_MICROSERVICES_SPRINGBOOT",
+      title: "BACKEND_MICROSERVICES",
       description:
         "Personal microservices project with Spring Boot. Kafka for messaging and DDD architecture.",
       url: "https://github.com/iv4n89?tab=repositories&q=java-ddd-films&type=&language=&sort=",

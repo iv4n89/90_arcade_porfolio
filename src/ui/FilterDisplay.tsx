@@ -16,7 +16,7 @@ const FilterDisplay: React.FC<FilterDisplayProps> = ({
 
   return (
     <div className={`flex items-center gap-4 ${className}`}>
-      <span className="text-yellow-400 font-mono text-sm">
+      <span className="text-yellow-400 text-xs">
         FILTER: [{filter.toUpperCase()}]
       </span>
       <Button

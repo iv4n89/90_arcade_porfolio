@@ -19,12 +19,12 @@ const Button: React.FC<ButtonProps> = ({
   style = {},
   fullWidth = false
 }) => {
-  const baseClasses = "cursor-pointer font-mono font-bold rounded transition-all transform hover:scale-105";
+  const baseClasses = "cursor-pointer font-bold rounded transition-all transform hover:scale-105";
   
   const sizeClasses = {
-    sm: "px-3 py-1 text-xs",
-    md: "px-4 py-2 text-sm",
-    lg: "px-6 py-3 text-base"
+    sm: "px-3 py-1 text-2xs",
+    md: "px-4 py-2 text-xs",
+    lg: "px-6 py-3 text-sm"
   };
 
   const variantClasses = {

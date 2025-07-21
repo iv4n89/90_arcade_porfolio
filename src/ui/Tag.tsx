@@ -11,7 +11,7 @@ const Tag: React.FC<TagProps> = ({
   className = '',
   variant = 'primary'
 }) => {
-  const baseClasses = "px-2 py-1 text-xs font-mono rounded";
+  const baseClasses = "px-2 py-1 text-3xs rounded";
   const variantClasses = {
     primary: "bg-black border border-purple-400 text-purple-400",
     secondary: "bg-gray-800 border border-gray-500 text-gray-300"

@@ -15,7 +15,7 @@ const StatusPanel: React.FC<StatusPanelProps> = ({
 }) => {
   return (
     <div className={`mt-12 pt-6 border-t border-gray-700 ${className}`}>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs font-mono">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
         <div>
           <div className="text-cyan-400 mb-1">SYSTEM STATUS</div>
           <div className="text-green-400">{status}</div>

@@ -48,7 +48,7 @@ const NeonText: React.FC<NeonTextProps> = ({
 
   return (
     <span
-      className={`${colorClasses[color]} text-4xl md:text-6xl lg:text-7xl ${className}`}
+      className={`${colorClasses[color]} text-3xl md:text-5xl lg:text-6xl ${className}`}
       style={neonStyle}
     >
       {children}

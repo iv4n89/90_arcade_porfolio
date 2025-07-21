@@ -13,7 +13,7 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <div className={className}>
-      <div className="text-green-400 font-mono text-sm mb-2">
+      <div className="text-green-400 text-2xs mb-2">
         {title}:
       </div>
       {children}

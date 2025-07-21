@@ -29,7 +29,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <div className="min-h-screen flex items-center justify-start px-8 md:px-16 relative z-10">
       <SectionContainer>
         <div className="mb-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-mono tracking-wider leading-none text-left flex flex-col">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl tracking-wider leading-none text-left flex flex-col">
             <NeonText
               color="white"
               isOn={isOn}

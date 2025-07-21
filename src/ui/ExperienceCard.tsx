@@ -17,14 +17,14 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       style={{ boxShadow: "0 0 20px rgba(138,43,226,0.2)" }}
     >
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
-        <h3 className="text-xl font-bold text-green-300 font-mono">
+        <h3 className="text-sm md:text-xl font-bold text-green-300 wrap-anywhere">
           {experience.title}
         </h3>
-        <span className="text-yellow-400 font-mono text-sm">
+        <span className="text-yellow-400 text-sm">
           [{experience.period}]
         </span>
       </div>
-      <h4 className="text-purple-300 font-mono mb-3">
+      <h4 className="text-purple-300 text-xs mb-3">
         {experience.company}
       </h4>
       <p className="text-gray-300 mb-4">{experience.description}</p>

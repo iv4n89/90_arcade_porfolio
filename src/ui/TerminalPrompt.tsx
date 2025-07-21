@@ -32,7 +32,7 @@ const TerminalPrompt: React.FC<TerminalPromptProps> = ({
       style={promptStyle}
     >
       <div
-        className="text-md sm:text-lg md:text-3xl font-mono text-green-400"
+        className="text-xs sm:text-lg py-2 text-green-400"
         style={textStyle}
       >
         &gt; {children}

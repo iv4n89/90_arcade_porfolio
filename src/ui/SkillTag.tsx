@@ -41,7 +41,7 @@ const SkillTag: React.FC<SkillTagProps> = ({
   return (
     <div
       onClick={onClick}
-      className={`px-4 py-2 border font-mono text-sm transition-all cursor-pointer transform hover:scale-105 ${colorClasses[color]} ${className}`}
+      className={`px-4 py-2 border text-xs transition-all cursor-pointer transform hover:scale-105 ${colorClasses[color]} ${className}`}
       style={tagStyle}
     >
       {children}

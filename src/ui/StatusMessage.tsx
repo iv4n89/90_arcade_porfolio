@@ -25,7 +25,7 @@ export const StatusMessage: React.FC<StatusMessageProps> = ({
   };
 
   return (
-    <div className={`${getColorClass()} font-mono text-xs mb-2`}>
+    <div className={`${getColorClass()} text-3xs mb-2`}>
       STATUS: [{status}]
     </div>
   );

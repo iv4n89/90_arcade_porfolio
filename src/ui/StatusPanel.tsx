@@ -9,7 +9,7 @@ interface StatusPanelProps {
 
 const StatusPanel: React.FC<StatusPanelProps> = ({
   status = "[ONLINE]",
-  location = "HUELVA, ES",
+  location = "SPAIN",
   className = "",
   onContactClick,
 }) => {

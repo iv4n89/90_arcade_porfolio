@@ -105,32 +105,67 @@ const Portfolio: React.FC = () => {
       }
     }, 8000);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleSections((prev) => ({
-              ...prev,
-              [(entry.target as HTMLElement).dataset.section!]: true,
-            }));
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
-
-    Object.values(sectionRefs).forEach((ref) => {
-      if (ref.current) observer.observe(ref.current);
-    });
-
     return () => {
       clearTimeout(timer1);
       clearInterval(flickerInterval);
       clearInterval(powerOutageInterval);
+    };
+  }, [flickering]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const section = (entry.target as HTMLElement).dataset.section;
+          if (section) {
+            setVisibleSections((prev) => ({
+              ...prev,
+              [section]: entry.isIntersecting,
+            }));
+          }
+        });
+      },
+      {
+        threshold: [0.1, 0.3, 0.5],
+        rootMargin: "50px 0px -50px 0px",
+      }
+    );
+
+    const setupObserver = () => {
+      Object.values(sectionRefs).forEach((ref) => {
+        if (ref.current) {
+          observer.observe(ref.current);
+        }
+      });
+    };
+
+    const timeoutId = setTimeout(setupObserver, 100);
+
+    return () => {
+      clearTimeout(timeoutId);
       observer.disconnect();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filteredProjects]); 
+
+  useEffect(() => {
+    if (sectionRefs.projects.current) {
+      const projectSection = sectionRefs.projects.current;
+      const rect = projectSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      const isInViewport =
+        rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3;
+
+      if (isInViewport) {
+        setVisibleSections((prev) => ({
+          ...prev,
+          projects: true,
+        }));
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filteredProjects, projectFilter]);
 
   return (
     <div className="bg-black min-h-screen portfolio-main-background">

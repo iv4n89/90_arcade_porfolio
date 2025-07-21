@@ -1,69 +1,98 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A retro-styled arcade portfolio website built with React and TypeScript, featuring a Commodore 64/arcade aesthetic with modern web technologies.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio showcases a unique design inspired by classic arcade machines and retro computing, combining nostalgic visual elements with contemporary web development practices. The site features interactive sections, custom animations, and a terminal-like interface that creates an immersive retro gaming experience.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Frontend
+- **React 18** - Component-based UI library
+- **TypeScript** - Type-safe JavaScript development
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Development Tools
+- **ESLint** - Code linting and quality enforcement
+- **PostCSS** - CSS processing and optimization
+- **Node.js** - Runtime environment
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Features
+- **Responsive Design** - Mobile and desktop optimized
+- **Custom Animations** - CSS transitions and keyframe animations
+- **Intersection Observer** - Scroll-based section visibility
+- **Component Architecture** - Modular and reusable UI components
+- **Custom Scrollbar** - Pixelated arcade-style scrolling
+- **Modal System** - Contact and skill detail modals
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
+
+```
+src/
+├── components/          # Main page components
+│   ├── AboutSection.tsx
+│   ├── ContactModal.tsx
+│   ├── EducationSection.tsx
+│   ├── ExperienceSection.tsx
+│   ├── HeroSection.tsx
+│   ├── ProjectsSection.tsx
+│   ├── SkillModal.tsx
+│   └── SkillsSection.tsx
+├── ui/                  # Reusable UI components
+│   ├── ActionButton.tsx
+│   ├── Button.tsx
+│   ├── Modal.tsx
+│   ├── SectionTitle.tsx
+│   └── ...
+├── hooks/               # Custom React hooks
+├── pages/               # Main page container
+├── types/               # TypeScript type definitions
+└── utils/               # Helper functions and constants
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Clone the repository
+git clone https://github.com/iv4n89/90_arcade_porfolio.git
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Navigate to project directory
+cd 90_arcade_porfolio
+
+# Install dependencies
+yarn install
+
+# Start development server
+yarn dev
 ```
+
+## Build
+
+```bash
+# Create production build
+yarn build
+
+# Preview production build
+yarn preview
+```
+
+## Development
+
+The project uses modern development practices including:
+
+- TypeScript for type safety
+- Component-based architecture
+- Responsive design patterns
+- Custom CSS animations
+- Optimized build process with Vite
+
+## Browser Support
+
+- Modern browsers supporting ES2020
+- Chrome, Firefox, Safari, Edge
+- Mobile browsers (iOS Safari, Chrome Mobile)
+
+
+

@@ -117,10 +117,10 @@ const Portfolio: React.FC = () => {
       (entries) => {
         entries.forEach((entry) => {
           const section = (entry.target as HTMLElement).dataset.section;
-          if (section) {
+          if (section && entry.isIntersecting) {
             setVisibleSections((prev) => ({
               ...prev,
-              [section]: entry.isIntersecting,
+              [section]: true,
             }));
           }
         });
@@ -146,7 +146,7 @@ const Portfolio: React.FC = () => {
       observer.disconnect();
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filteredProjects]); 
+  }, [filteredProjects]);
 
   useEffect(() => {
     if (sectionRefs.projects.current) {

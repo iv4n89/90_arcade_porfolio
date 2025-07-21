@@ -66,7 +66,7 @@ export const ContactField: React.FC<ContactFieldProps> = ({
     <div className="border border-green-400 rounded p-3 bg-black transition-all duration-300">
       <div className="flex items-center justify-between">
         <div className={actionType === "visit" ? "flex-1" : ""}>
-          <div className="text-green-400 text-2xs">
+          <div className="text-green-400 text-2xs wrap-anywhere">
             {label}
           </div>
           <div className={`text-gray-300 ${actionType === "visit" ? "text-2xs break-all pr-3" : "text-xs"}`}>

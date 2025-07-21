@@ -1,11 +1,12 @@
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-/* Portfolio background styles */
+/* Retro Scrollbar Styles - Pixelated Arcade Style */
+/* Apply scrollbar styles to portfolio container */
 .portfolio-main-background {
   background-image: radial-gradient(
       circle at 20% 50%,
@@ -30,6 +31,72 @@ body {
       rgba(255, 255, 255, 0.02) 4px
     );
   background-attachment: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) - Apply to portfolio container */
+.portfolio-main-background::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.portfolio-main-background::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 0;
+}
+
+.portfolio-main-background::-webkit-scrollbar-thumb {
+  background: #00ffff;
+  border: none;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  border-radius: 0 !important;
+  box-shadow: none;
+  min-height: 20px;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      #00ffff 0px,
+      #00ffff 1px,
+      #0080ff 1px,
+      #0080ff 2px
+    );
+}
+
+.portfolio-main-background::-webkit-scrollbar-thumb:hover {
+  background: #40ffff;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      #40ffff 0px,
+      #40ffff 1px,
+      #20a0ff 1px,
+      #20a0ff 2px
+    );
+}
+
+.portfolio-main-background::-webkit-scrollbar-thumb:active {
+  background: #0080ff;
+  background-image: 
+    repeating-linear-gradient(
+      0deg,
+      #0080ff 0px,
+      #0080ff 1px,
+      #004080 1px,
+      #004080 2px
+    );
+}
+
+.portfolio-main-background::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Hide scrollbar buttons completely */
+.portfolio-main-background::-webkit-scrollbar-button {
+  display: none;
 }
 
 .portfolio-overlay {
@@ -83,4 +150,10 @@ body {
   100% {
     opacity: 0;
   }
+}
+
+/* Firefox scrollbar styles - Apply to portfolio container */
+.portfolio-main-background {
+  scrollbar-width: thin;
+  scrollbar-color: #00ffff transparent;
 }

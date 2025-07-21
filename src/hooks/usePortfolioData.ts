@@ -258,6 +258,7 @@ export const usePortfolioData = () => {
         "Nest.js",
         "React",
         "Next.js",
+        "Redux",
         "Tailwind CSS",
         "CSS3",
         "Docker",

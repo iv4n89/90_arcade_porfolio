@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import AboutSection from "../components/AboutSection";
 import { ContactModal } from "../components/ContactModal";
 import EducationSection from "../components/EducationSection";
 import ExperienceSection from "../components/ExperienceSection";
@@ -31,6 +32,7 @@ const Portfolio: React.FC = () => {
     projects: useRef<HTMLElement>(null),
     skills: useRef<HTMLElement>(null),
     education: useRef<HTMLElement>(null),
+    about: useRef<HTMLElement>(null),
   };
 
   const scrollToSection = (section: string, filter?: string): void => {
@@ -207,6 +209,12 @@ const Portfolio: React.FC = () => {
         ref={sectionRefs.education}
         isVisible={visibleSections.education}
         education={educationData}
+      />
+
+      <AboutSection
+        ref={sectionRefs.about}
+        isVisible={visibleSections.about}
+        onContactClick={openContactModal}
       />
 
       <SkillModal

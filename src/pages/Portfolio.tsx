@@ -134,6 +134,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="bg-black min-h-screen portfolio-main-background">
+      <title>Portfolio Iván Betanzos Macías</title>
       <div className="fixed inset-0 pointer-events-none opacity-20 z-0 portfolio-overlay"></div>
 
       <HeroSection

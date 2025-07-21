@@ -21,7 +21,7 @@ const EducationSection = React.forwardRef<HTMLElement, EducationSectionProps>(({
       }`}
     >
       <SectionContainer>
-        <SectionTitle color="purple">
+        <SectionTitle color="red">
           &gt; EDUCATION.DB
         </SectionTitle>
 

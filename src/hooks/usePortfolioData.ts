@@ -78,6 +78,78 @@ export const usePortfolioData = () => {
 
   const projectsData: Project[] = [
     {
+      title: "AI_GENERATED_DT_TOOL",
+      description:
+        "Internal BCNC Group project for automated generation of Technical Dossiers (DT) using Generative AI. NodeJS backend with TypeScript and clean architecture, Flask microservice for DOCX generation with Jinja templates, and React + Vite frontend. Integrated with ChatGPT API for data processing and prompt optimization.",
+      technologies: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Node.js",
+        "Flask",
+        "Python",
+        "MongoDB",
+        "Docker",
+        "OpenAI API",
+        "ChatGPT",
+        "Prompt Engineering",
+        "Jinja",
+        "Git",
+        "GitHub",
+        "Scrum",
+        "Jira",
+      ],
+      status: "DEMO",
+      year: "2025 - CURRENT",
+    },
+    {
+      title: "INDITEX_MONITORING_APP",
+      description:
+        "Web application for Inditex data monitoring and internal analytics. Developed with React and Vite, including unit and integration testing (Jest, Puppeteer). Collaboration with QA and Product teams to ensure performance, accessibility and consistency.",
+      technologies: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Jest",
+        "TanStack Query",
+        "Zustand",
+        "Puppeteer",
+        "Testing Library",
+        "CSS3",
+        "Docker",
+        "Git",
+        "GitHub",
+        "Jira",
+        "Scrum",
+      ],
+      status: "PRODUCTION",
+      year: "2025",
+    },
+    {
+      title: "ANONYMOUS_CHAT_APP",
+      description:
+        "Personal real-time chat project with anonymous user and room management. Each room supports up to 10 users, with randomly generated names for both rooms and participants. Backend built with Java and Spring Boot using Hexagonal Architecture and DDD principles. Includes unit and integration testing with JUnit and Mockito, and H2 in-memory database. Frontend developed with React and Vite for fast and responsive interaction.",
+      url: "https://github.com/iv4n89/java-react-real-time-chat",
+      technologies: [
+        "Java",
+        "Spring Boot",
+        "DDD",
+        "Hexagonal Architecture",
+        "JUnit",
+        "Mockito",
+        "H2",
+        "React",
+        "Vite",
+        "TypeScript",
+        "WebSockets",
+        "Docker",
+        "Git",
+        "GitHub",
+      ],
+      status: "PERSONAL_PROJECT",
+      year: "2025",
+    },
+    {
       title: "E-COMMERCE_FRONTEND",
       description:
         "E-commerce base project for different Telefónica brands. Next.js with SAP integration and page builder.",
@@ -325,6 +397,8 @@ export const usePortfolioData = () => {
       "React",
       "Next.js",
       "Redux",
+      "TanStack Query",
+      "Zustand",
       "Angular",
       "TypeScript",
       "JavaScript",
@@ -340,6 +414,7 @@ export const usePortfolioData = () => {
       "Nest.js",
       "Java",
       "Spring Boot",
+      "OpenAI",
       "PHP",
       "Laravel",
       "Python",
@@ -378,19 +453,19 @@ export const usePortfolioData = () => {
   const skillDetails: Record<string, SkillDetail> = {
     React: {
       level: "EXPERT",
-      experience: "4 years",
+      experience: "5 years",
       description:
         "Favorite library for modern interfaces. Hooks, Context API, and performance optimization.",
     },
     "Node.js": {
       level: "EXPERT",
-      experience: "4 years",
+      experience: "5 years",
       description:
         "Main runtime for backend. Scalable APIs, microservices and real-time applications.",
     },
     TypeScript: {
       level: "EXPERT",
-      experience: "4 years",
+      experience: "5 years",
       description:
         "Preferred language for large projects. Type safety and better developer experience.",
     },
@@ -402,7 +477,7 @@ export const usePortfolioData = () => {
     },
     Jest: {
       level: "ADVANCED",
-      experience: "3 years",
+      experience: "4 years",
       description:
         "Main testing framework. Unit tests, integration tests and mocks.",
     },
@@ -414,13 +489,13 @@ export const usePortfolioData = () => {
     },
     "Testing Library": {
       level: "ADVANCED",
-      experience: "3 years",
+      experience: "4 years",
       description:
         "React component testing. Focus on user interactions and accessibility.",
     },
     Docker: {
       level: "ADVANCED",
-      experience: "3 years",
+      experience: "4 years",
       description:
         "Containerization for development and production. Docker Compose and basic orchestration.",
     },
@@ -432,7 +507,7 @@ export const usePortfolioData = () => {
     },
     MongoDB: {
       level: "ADVANCED",
-      experience: "3 years",
+      experience: "4 years",
       description:
         "NoSQL database for modern applications. Aggregation pipelines and optimization.",
     },
@@ -444,7 +519,7 @@ export const usePortfolioData = () => {
     },
     JavaScript: {
       level: "EXPERT",
-      experience: "4 years",
+      experience: "5 years",
       description:
         "Base language for web development. ES6+ features, async programming and optimization.",
     },
@@ -456,21 +531,32 @@ export const usePortfolioData = () => {
     },
     HTML5: {
       level: "EXPERT",
-      experience: "4 years",
+      experience: "5 years",
       description:
         "Web structure foundation. Semantics, accessibility and best practices.",
     },
     CSS3: {
       level: "EXPERT",
-      experience: "4 years",
+      experience: "5 years",
       description:
         "Modern styling with Flexbox and Grid. Preprocessors like SASS and Tailwind CSS.",
     },
     Redux: {
-        level: "INTERMEDIATE",
-        experience: "2 years",
-        description:
-            "State management for React applications. Middleware, selectors and performance optimization.",
+      level: "INTERMEDIATE",
+      experience: "2 years",
+      description:
+        "State management for React applications. Middleware, selectors and performance optimization.",
+    },
+    "TanStack Query": {
+      level: "INTERMEDIATE",
+      experience: "2 years",
+      description:
+        "Data fetching and caching for React. Optimizes API state management and server synchronization."
+    },
+    Zustand: {
+      level: "INTERMEDIATE",
+      experience: "2 years",
+      description: "Lightweight state management for React. Simplifies global state handling with minimal boilerplate."
     },
     "Nest.js": {
       level: "ADVANCED",
@@ -480,13 +566,13 @@ export const usePortfolioData = () => {
     },
     Java: {
       level: "INTERMEDIATE",
-      experience: "2 years",
+      experience: "3 years",
       description:
         "Programming language for enterprise applications. Spring Boot and microservices.",
     },
     "Spring Boot": {
       level: "INTERMEDIATE",
-      experience: "2 years",
+      experience: "3 years",
       description:
         "Java framework for rapid application development. Microservices and REST APIs.",
     },
@@ -612,7 +698,7 @@ export const usePortfolioData = () => {
     },
     "REST APIs": {
       level: "ADVANCED",
-      experience: "3 years",
+      experience: "4 years",
       description:
         "RESTful API design and development. Design principles, authentication and documentation.",
     },

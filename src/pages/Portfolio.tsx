@@ -10,6 +10,7 @@ import SkillModal from "../components/SkillModal";
 import SkillsSection from "../components/SkillsSection";
 import { usePortfolioData } from "../hooks/usePortfolioData";
 import type { VisibleSections } from "../types";
+import { useDocumentTitle } from "../hooks/useDocumentTitle";
 
 const Portfolio: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -26,6 +27,7 @@ const Portfolio: React.FC = () => {
     skillDetails,
     skillsData,
   } = usePortfolioData();
+  useDocumentTitle("Portfolio - Iván Betanzos Macías");
 
   const sectionRefs = {
     experience: useRef<HTMLElement>(null),

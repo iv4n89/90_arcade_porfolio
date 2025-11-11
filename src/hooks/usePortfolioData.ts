@@ -10,6 +10,52 @@ export const usePortfolioData = () => {
   const experienceData: Experience[] = [
     {
       title: "FULL_STACK_DEVELOPER",
+      company: "BCNC - INTERNAL PROJECT (AI GENERATIVE)",
+      period: "2025 - PRESENT",
+      description:
+        "Development of an internal web application for automatic Technical Dossier (DT) generation using Generative AI. Node.js backend with TypeScript and clean architecture, Flask microservice for DOCX creation, and React + Vite frontend integrated with ChatGPT API.",
+      technologies: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Node.js",
+        "Flask",
+        "Python",
+        "MongoDB",
+        "Docker",
+        "OpenAI API",
+        "ChatGPT",
+        "Prompt Engineering",
+        "Jinja",
+        "Git",
+        "GitHub",
+        "Scrum",
+        "Jira",
+      ],
+    },
+    {
+      title: "FRONTEND_DEVELOPER",
+      company: "BCNC - INDITEX",
+      period: "2025",
+      description:
+        "Development of internal data monitoring and analytics web application. React and Vite-based frontend with unit and integration testing (Jest, Puppeteer). Collaboration with QA and Product teams to ensure performance, accessibility, and consistency.",
+      technologies: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "Jest",
+        "Puppeteer",
+        "Testing Library",
+        "CSS3",
+        "Docker",
+        "Git",
+        "GitHub",
+        "Jira",
+        "Scrum",
+      ],
+    },
+    {
+      title: "FULL_STACK_DEVELOPER",
       company: "BCNC - TELEFONICA",
       period: "2024 - PRESENT",
       description:

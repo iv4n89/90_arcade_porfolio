@@ -57,7 +57,7 @@ export const usePortfolioData = () => {
     {
       title: "FULL_STACK_DEVELOPER",
       company: "BCNC - TELEFONICA",
-      period: "2024 - PRESENT",
+      period: "2024 - 2025",
       description:
         "Web application development with Next.js, blog and page builder on WordPress",
       technologies: [

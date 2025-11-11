@@ -90,12 +90,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             [PHP]
           </SkillTag>
           <SkillTag
-            onClick={() => onTagClick("projects", "angular")}
+            onClick={() => onTagClick("projects", "python")}
             color="red"
             isOn={isOn}
             powerOutage={powerOutage}
           >
-            [ANGULAR]
+            [PYTHON]
           </SkillTag>
         </div>
 

@@ -151,6 +151,7 @@ export const usePortfolioData = () => {
     {
       title: "IGDB_RETRO_GAME_DATABASE",
       description: "Web application with IGDB API integration for explore retro games",
+      url: "https://igdb-game-db-next.vercel.app/",
       technologies: [
         "React",
         "NextJS",
@@ -161,6 +162,9 @@ export const usePortfolioData = () => {
         "HTML",
         "GIT",
         "GitHub"
+      ],
+      status: "PERSONAL_PROJECT",
+      year: "2025 - CURRENT"
     },
     {
       title: "INDITEX_MONITORING_APP",

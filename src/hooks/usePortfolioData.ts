@@ -149,6 +149,20 @@ export const usePortfolioData = () => {
       year: "2025 - CURRENT",
     },
     {
+      title: "IGDB_RETRO_GAME_DATABASE",
+      description: "Web application with IGDB API integration for explore retro games",
+      technologies: [
+        "React",
+        "NextJS",
+        "TypeScript",
+        "Axios",
+        "Tailwind",
+        "CSS3",
+        "HTML",
+        "GIT",
+        "GitHub"
+    },
+    {
       title: "INDITEX_MONITORING_APP",
       description:
         "Web application for Inditex data monitoring and internal analytics. Developed with React and Vite, including unit and integration testing (Jest, Puppeteer). Collaboration with QA and Product teams to ensure performance, accessibility and consistency.",

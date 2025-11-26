@@ -5,38 +5,27 @@ body {
   font-style: normal;
 }
 
-/* Retro Scrollbar Styles - Pixelated Arcade Style */
-/* Apply scrollbar styles to portfolio container */
 .portfolio-main-background {
-  background-image: radial-gradient(
-      circle at 20% 50%,
+  background-image: radial-gradient(circle at 20% 50%,
       rgba(0, 255, 255, 0.15) 0%,
-      transparent 70%
-    ),
-    radial-gradient(
-      circle at 80% 20%,
+      transparent 70%),
+    radial-gradient(circle at 80% 20%,
       rgba(255, 0, 255, 0.1) 0%,
-      transparent 70%
-    ),
-    radial-gradient(
-      circle at 40% 80%,
+      transparent 70%),
+    radial-gradient(circle at 40% 80%,
       rgba(57, 255, 20, 0.08) 0%,
-      transparent 70%
-    ),
-    repeating-linear-gradient(
-      90deg,
+      transparent 70%),
+    repeating-linear-gradient(90deg,
       transparent,
       transparent 2px,
       rgba(255, 255, 255, 0.02) 2px,
-      rgba(255, 255, 255, 0.02) 4px
-    );
+      rgba(255, 255, 255, 0.02) 4px);
   background-attachment: fixed;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
 }
 
-/* Webkit browsers (Chrome, Safari, Edge) - Apply to portfolio container */
 .portfolio-main-background::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -56,104 +45,149 @@ body {
   border-radius: 0 !important;
   box-shadow: none;
   min-height: 20px;
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
+  background-image:
+    repeating-linear-gradient(0deg,
       #00ffff 0px,
       #00ffff 1px,
       #0080ff 1px,
-      #0080ff 2px
-    );
+      #0080ff 2px);
 }
 
 .portfolio-main-background::-webkit-scrollbar-thumb:hover {
   background: #40ffff;
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
+  background-image:
+    repeating-linear-gradient(0deg,
       #40ffff 0px,
       #40ffff 1px,
       #20a0ff 1px,
-      #20a0ff 2px
-    );
+      #20a0ff 2px);
 }
 
 .portfolio-main-background::-webkit-scrollbar-thumb:active {
   background: #0080ff;
-  background-image: 
-    repeating-linear-gradient(
-      0deg,
+  background-image:
+    repeating-linear-gradient(0deg,
       #0080ff 0px,
       #0080ff 1px,
       #004080 1px,
-      #004080 2px
-    );
+      #004080 2px);
 }
 
 .portfolio-main-background::-webkit-scrollbar-corner {
   background: transparent;
 }
 
-/* Hide scrollbar buttons completely */
 .portfolio-main-background::-webkit-scrollbar-button {
   display: none;
 }
 
 .portfolio-overlay {
-  background-image: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 255, 255, 0.1) 2px,
-    rgba(0, 255, 255, 0.1) 4px
-  );
+  background-image: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 255, 255, 0.1) 2px,
+      rgba(0, 255, 255, 0.1) 4px);
 }
 
 .text-2xs {
-  font-size: 0.625rem; /* 10px */
+  font-size: 0.625rem;
 }
 
 .text-3xs {
-  font-size: 0.5rem; /* 8px */
+  font-size: 0.5rem;
 }
 
-/* Animations */
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   33% {
     transform: translateY(-10px) rotate(120deg);
   }
+
   66% {
     transform: translateY(5px) rotate(240deg);
   }
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.3;
   }
 }
 
 @keyframes blink {
+
   0%,
   50% {
     opacity: 1;
   }
+
   51%,
   100% {
     opacity: 0;
   }
 }
 
-/* Firefox scrollbar styles - Apply to portfolio container */
 .portfolio-main-background {
   scrollbar-width: thin;
   scrollbar-color: #00ffff transparent;
+}
+
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.crt-scanlines {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.2));
+  background-size: 100% 4px;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  animation: scanline-move 10s linear infinite;
+}
+
+.crt-vignette {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background: radial-gradient(circle,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.4) 90%,
+      rgba(0, 0, 0, 0.8) 100%);
+  box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes scanline-move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 100%;
+  }
 }

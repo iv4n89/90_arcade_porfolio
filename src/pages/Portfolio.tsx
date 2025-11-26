@@ -11,6 +11,7 @@ import SkillsSection from "../components/SkillsSection";
 import { usePortfolioData } from "../hooks/usePortfolioData";
 import type { VisibleSections } from "../types";
 import { useDocumentTitle } from "../hooks/useDocumentTitle";
+import { CRTOverlay } from "../ui";
 
 const Portfolio: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
@@ -173,6 +174,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <div className="bg-black min-h-screen portfolio-main-background">
+      <CRTOverlay />
       <div className="fixed inset-0 pointer-events-none opacity-20 z-0 portfolio-overlay"></div>
 
       <HeroSection

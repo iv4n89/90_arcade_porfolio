@@ -167,6 +167,22 @@ export const usePortfolioData = () => {
       year: "2025 - CURRENT"
     },
     {
+      title: "Pacman React Clone",
+      description: "Pacman game clone using React and Vite",
+      url: "https://react-pacman-clone.vercel.app/",
+      technologies: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "CSS3",
+        "HTML",
+        "GIT",
+        "GitHub"
+      ],
+      status: "PERSONAL_PROJECT",
+      year: "2025 - CURRENT"
+    },
+    {
       title: "INDITEX_MONITORING_APP",
       description:
         "Web application for Inditex data monitoring and internal analytics. Developed with React and Vite, including unit and integration testing (Jest, Puppeteer). Collaboration with QA and Product teams to ensure performance, accessibility and consistency.",

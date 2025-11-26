@@ -27,7 +27,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
   return (
     <div className="min-h-screen flex items-center justify-start px-8 md:px-16 relative z-10">
-      <SectionContainer>
+      <SectionContainer className="relative z-10">
         <div className="mb-8">
           <h1 className="text-4xl md:text-6xl lg:text-7xl tracking-wider leading-none text-left flex flex-col">
             <NeonText
@@ -101,7 +101,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 
         <StatusPanel onContactClick={onContactClick} />
       </SectionContainer>
-      <ParticleSystem />
+      <ParticleSystem className="z-0" />
     </div>
   );
 };

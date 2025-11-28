@@ -167,6 +167,24 @@ export const usePortfolioData = () => {
       year: "2025 - CURRENT"
     },
     {
+      title: "El Chef Sarcástico",
+      description: "React / NextJS game where a sarcastic chef (based on Gemini AI) gives you cooking recipes or insults based on the ingredients you choose.",
+      url: "https://el-chef-sarcastico.vercel.app/",
+      technologies: [
+        "React",
+        "NextJS",
+        "TypeScript",
+        "OpenAI API",
+        "Tailwind",
+        "CSS3",
+        "HTML",
+        "GIT",
+        "GitHub"
+      ],
+      status: "PERSONAL_PROJECT",
+      year: "2025 - CURRENT"
+    },
+    {
       title: "Pacman React Clone",
       description: "Pacman game clone using React and Vite",
       url: "https://react-pacman-clone.vercel.app/",

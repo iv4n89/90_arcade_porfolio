@@ -157,7 +157,7 @@ export const usePortfolioData = () => {
         "NestJS",
         "TypeScript",
         "Tailwind",
-        "Generative AI",
+        "OpenAI API",
         "CSS3",
         "HTML",
         "GIT",

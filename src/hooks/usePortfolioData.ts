@@ -163,6 +163,8 @@ export const usePortfolioData = () => {
         "GIT",
         "GitHub"
       ],
+      status: "PERSONAL_PROJECT",
+      year: "2025",
     },
     {
       title: "IGDB_RETRO_GAME_DATABASE",

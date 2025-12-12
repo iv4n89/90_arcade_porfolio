@@ -149,6 +149,22 @@ export const usePortfolioData = () => {
       year: "2025 - CURRENT",
     },
     {
+      title: "RETRO_SCAN_AI",
+      description: "Web application for scanning and appraising retro video games. It leverages the Gemini API to identify games from images and analyzes market data from eBay and PriceCharting to estimate value.",
+      url: "https://ai-games-price-search-backend.onrender.com/api",
+      technologies: [
+        "Angular",
+        "NestJS",
+        "TypeScript",
+        "Tailwind",
+        "Generative AI",
+        "CSS3",
+        "HTML",
+        "GIT",
+        "GitHub"
+      ],
+    },
+    {
       title: "IGDB_RETRO_GAME_DATABASE",
       description: "Web application with IGDB API integration for explore retro games",
       url: "https://igdb-game-db-next.vercel.app/",

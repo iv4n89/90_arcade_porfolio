@@ -151,7 +151,7 @@ export const usePortfolioData = () => {
     {
       title: "RETRO_SCAN_AI",
       description: "Web application for scanning and appraising retro video games. It leverages the Gemini API to identify games from images and analyzes market data from eBay and PriceCharting to estimate value.",
-      url: "https://ai-games-price-search-backend.onrender.com/api",
+      url: "https://ai-games-price-search-frontend.vercel.app/",
       technologies: [
         "Angular",
         "NestJS",

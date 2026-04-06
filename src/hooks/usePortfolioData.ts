@@ -11,9 +11,9 @@ export const usePortfolioData = () => {
     {
       title: "FULL_STACK_DEVELOPER",
       company: "BCNC - INTERNAL PROJECT (AI GENERATIVE)",
-      period: "2025 - PRESENT",
+      period: "2025 - CURRENT",
       description:
-        "Development of an internal web application for automatic Technical Dossier (DT) generation using Generative AI. Node.js backend with TypeScript and clean architecture, Flask microservice for DOCX creation, and React + Vite frontend integrated with ChatGPT API.",
+        "Development of an internal web application for automatic Technical Dossier (DT) generation using Generative AI. Node.js backend with TypeScript and clean architecture, .NET microservice for DOCX creation, and React + Vite frontend integrated with ChatGPT API.",
       technologies: [
         "React",
         "Vite",
@@ -22,6 +22,7 @@ export const usePortfolioData = () => {
         "Flask",
         "Python",
         "MongoDB",
+        ".NET",
         "Docker",
         "OpenAI API",
         "ChatGPT",
@@ -36,9 +37,9 @@ export const usePortfolioData = () => {
     {
       title: "FRONTEND_DEVELOPER",
       company: "BCNC - INDITEX",
-      period: "2025",
+      period: "2025 - 2026",
       description:
-        "Development of internal data monitoring and analytics web application. React and Vite-based frontend with unit and integration testing (Jest, Puppeteer). Collaboration with QA and Product teams to ensure performance, accessibility, and consistency.",
+        "Development of internal data monitoring and analytics web applications. React and Vite-based frontend with unit and integration testing (Jest, Puppeteer). Collaboration with QA and Product teams to ensure performance, accessibility, and consistency.",
       technologies: [
         "React",
         "Vite",

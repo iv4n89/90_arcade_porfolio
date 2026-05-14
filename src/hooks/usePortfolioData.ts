@@ -127,7 +127,7 @@ export const usePortfolioData = () => {
     {
       title: "AI_GENERATED_DT_TOOL",
       description:
-        "Internal BCNC Group project for automated generation of Technical Dossiers (DT) using Generative AI. NodeJS backend with TypeScript and clean architecture, Flask microservice for DOCX generation with Jinja templates, and React + Vite frontend. Integrated with ChatGPT API for data processing and prompt optimization.",
+        "Internal BCNC Group project for automated generation of Technical Dossiers (DT) using Generative AI. NodeJS backend with TypeScript and clean architecture, .NET microservice for DOCX generation with Jinja templates, and React + Vite frontend. Integrated with ChatGPT API for data processing and prompt optimization.",
       technologies: [
         "React",
         "Vite",
@@ -148,6 +148,20 @@ export const usePortfolioData = () => {
       ],
       status: "DEMO",
       year: "2025 - CURRENT",
+    },
+    {
+      title: "Retro_Finder",
+      description: "Application that replicates the Macintosh 1.0 OS interface. It is a little museum of the history of computing. ONLY ON DESKTOP",
+      url: "https://retro-finder.vercel.app/",
+      technologies: [
+        "Astro",
+        "Tailwind CSS",
+        "JavaScript",
+        "TypeScript",
+        "Vite"
+        ],
+      status: "PERSONAL_PROJECT",
+      year: "2026",
     },
     {
       title: "RETRO_SCAN_AI",
